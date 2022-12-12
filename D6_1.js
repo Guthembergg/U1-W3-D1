@@ -237,10 +237,14 @@ spam(emailContent);
 
 console.log("---------------ESERICIZO 10-------------------");
 
-getDate();
-let data = new Date();
-function passati(data) {}
+let date_1 = new Date("10/25/2021");
 
+function passati(data) {
+  let date_2 = new Date();
+  let difference = date_2.getTime() - date_1.getTime();
+  console.log("la differenza di giorni e':", difference / (1000 * 3600 * 24));
+}
+passati(date_1);
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come paremetri due numeri interi, "x" e "y".
  Il risultato deve essere una matrice di "x" volte "y", e i valori devono rispecchiare gli indici della posizione all'interno della matrice.

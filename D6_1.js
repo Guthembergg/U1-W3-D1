@@ -257,12 +257,21 @@ passati(date_1);
 
 function matrixGenerator(x, y) {
   myArr = [];
-  for (let i = 0; i <= y; i++) {
-    for (let a = 0; a <= x; a++) {
-      myArr.push("" + i + a);
+  if (
+    typeof y === "number" &&
+    Number.isInteger(y) &&
+    typeof x === "number" &&
+    Number.isInteger(x)
+  ) {
+    for (let i = 0; i <= y; i++) {
+      for (let a = 0; a <= x; a++) {
+        myArr.push("" + i + a);
+      }
     }
+    console.log(myArr);
+  } else {
+    console.log("inserisci due numeri interi");
   }
-  console.log(myArr);
 }
 
 matrixGenerator(6, 6);

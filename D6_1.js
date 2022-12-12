@@ -210,7 +210,7 @@ function longest(array) {
       strmax = i;
     }
   }
-  console.log("la stringa più lunga si trova", strmax);
+  console.log("la stringa più lunga è:'", array[strmax], "'");
 }
 longest(arraystring);
 /* EXTRA 9
@@ -220,11 +220,26 @@ longest(arraystring);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("---------------ESERICIZO 9-------------------");
+emailContent = "niente spam in questa email";
+function spam(emailContent) {
+  if (emailContent.search("SPAM") || emailContent.search("SCAM")) {
+    console.log("trovato spam");
+    return true;
+  }
+}
+spam(emailContent);
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("---------------ESERICIZO 10-------------------");
+
+getDate();
+let data = new Date();
+function passati(data) {}
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come paremetri due numeri interi, "x" e "y".

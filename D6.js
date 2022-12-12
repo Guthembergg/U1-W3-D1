@@ -137,13 +137,13 @@ reverseString("ciao amico");
 
 function upperFirst(string) {
   arraystring = string.split(" ");
-  console.log(arraystring);
   let arraym = [];
   let maiusc = 0;
-  for (let i = 0; i < arraystring; i++) {
-    maiusc = arraystring[i].substring(0, 1).toUpperCase();
-    console.log(maiusc);
-    arraym = arraym.push(maiusc);
+  for (let i = 0; i < arraystring.length; i++) {
+    maiusc =
+      arraystring[i].substring(0, 1).toUpperCase() + arraystring[i].slice(1);
+
+    arraym.push(maiusc);
   }
   console.log(arraym);
 }

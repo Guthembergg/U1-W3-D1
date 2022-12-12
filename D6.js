@@ -64,7 +64,7 @@ function creazyDiff(num1) {
     console.log("inserisci numero");
   }
 }
-creazyDiff(-21);
+creazyDiff(9);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure

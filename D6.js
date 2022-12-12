@@ -13,6 +13,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("-----------------ESRCIZIO 1----------------------");
 function area(l1, l2) {
   console.log("l'area è:", l1 * l2);
 }
@@ -24,7 +25,7 @@ area(3, 2);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("-----------------ESRCIZIO 2----------------------");
 function creazySum(num1, num2) {
   numsomma = num1 + num2;
   if (num1 === num2) {
@@ -41,7 +42,7 @@ creazySum(2, 2);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("-----------------ESRCIZIO 3----------------------");
 function creazyDiff(num1) {
   numdiff = num1 - 19;
   Math.abs(numdiff);
@@ -59,7 +60,7 @@ creazyDiff(20);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("-----------------ESRCIZIO 4----------------------");
 function boundary(n) {
   if (typeof n === "number" && Number.isInteger(n)) {
     if ((n > 20 && n <= 100) || n === 400) {
@@ -78,6 +79,7 @@ console.log(boundary(500.5));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("-----------------ESRCIZIO 5----------------------");
 function epify(string) {
   if (typeof string === "string") {
     epicode = "EPICODE ";
@@ -98,7 +100,7 @@ epify("ciao");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("-----------------ESRCIZIO 6----------------------");
 function check3and7(n) {
   if (typeof n === "number" && n > 0) {
     if (n % 3 === 0) {
@@ -119,6 +121,7 @@ check3and7(6);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("-----------------ESRCIZIO 7----------------------");
 function reverseString(string) {
   if (typeof string === "string") {
     console.log(string.split("").reverse().join(""));
@@ -134,7 +137,7 @@ reverseString("ciao amico");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("-----------------ESRCIZIO 8----------------------");
 function upperFirst(string) {
   arraystring = string.split(" ");
   let arraym = [];
@@ -154,9 +157,33 @@ upperFirst("ciao amici");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("-----------------ESRCIZIO 9----------------------");
 
+function cutString(string) {
+  if (typeof string === "string") {
+    stringF = string.slice(1, -1);
+    console.log(stringF);
+  } else {
+    console.log("inserisci stringa");
+  }
+}
+cutString("ciao");
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("-----------------ESRCIZIO 10----------------------");
+
+function giveMeRandom(n) {
+  if (typeof n === "number" && Number.isInteger(n)) {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      arr.push(Math.floor(Math.random() * 11));
+    }
+    console.log(arr);
+  } else {
+    console.log("inserisci un numero intero");
+  }
+}
+giveMeRandom(8);

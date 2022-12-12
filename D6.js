@@ -15,7 +15,11 @@ REGOLE
 
 console.log("-----------------ESRCIZIO 1----------------------");
 function area(l1, l2) {
-  console.log("l'area è:", l1 * l2);
+  if (typeof l1 === "number" && typeof l2 === "number") {
+    console.log("l'area è:", l1 * l2);
+  } else {
+    console.log("inserisci numeri");
+  }
 }
 area(3, 2);
 /* ESERCIZIO 2
@@ -27,11 +31,15 @@ area(3, 2);
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-----------------ESRCIZIO 2----------------------");
 function creazySum(num1, num2) {
-  numsomma = num1 + num2;
-  if (num1 === num2) {
-    console.log(numsomma * 3);
+  if (typeof num1 === "number" && typeof num2 === "number") {
+    numsomma = num1 + num2;
+    if (num1 === num2) {
+      console.log(numsomma * 3);
+    } else {
+      console.log(numsomma);
+    }
   } else {
-    console.log(numsomma);
+    console.log("inserisci numeri");
   }
 }
 creazySum(2, 2);
@@ -44,15 +52,19 @@ creazySum(2, 2);
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-----------------ESRCIZIO 3----------------------");
 function creazyDiff(num1) {
-  numdiff = num1 - 19;
-  Math.abs(numdiff);
-  if (num1 > 19) {
-    console.log(Math.abs(numdiff) * 3);
+  if (typeof num1 === "number") {
+    numdiff = Math.abs(num1 - 19);
+
+    if (num1 > 19) {
+      console.log(numdiff * 3);
+    } else {
+      console.log(numdiff);
+    }
   } else {
-    console.log(Math.abs(numdiff));
+    console.log("inserisci numero");
   }
 }
-creazyDiff(20);
+creazyDiff(-21);
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -70,7 +82,7 @@ function boundary(n) {
     return "inserisci numero intero";
   }
 }
-console.log(boundary(500.5));
+console.log(boundary(500));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -139,16 +151,20 @@ reverseString("ciao amico");
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("-----------------ESRCIZIO 8----------------------");
 function upperFirst(string) {
-  arraystring = string.split(" ");
-  let arraym = [];
-  let maiusc = 0;
-  for (let i = 0; i < arraystring.length; i++) {
-    maiusc =
-      arraystring[i].substring(0, 1).toUpperCase() + arraystring[i].slice(1);
+  if (typeof string === "string") {
+    arraystring = string.split(" ");
+    let arraym = [];
+    let maiusc = 0;
+    for (let i = 0; i < arraystring.length; i++) {
+      maiusc =
+        arraystring[i].substring(0, 1).toUpperCase() + arraystring[i].slice(1);
 
-    arraym.push(maiusc);
+      arraym.push(maiusc);
+    }
+    console.log(arraym);
+  } else {
+    console.log("inserisci stringa");
   }
-  console.log(arraym);
 }
 upperFirst("ciao amici");
 /* ESERCIZIO 9

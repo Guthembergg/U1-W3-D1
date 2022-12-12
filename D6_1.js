@@ -254,3 +254,15 @@ passati(date_1);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function matrixGenerator(x, y) {
+  myArr = [];
+  for (let i = 0; i <= y; i++) {
+    for (let a = 0; a <= x; a++) {
+      myArr.push("" + i + a);
+    }
+  }
+  console.log(myArr);
+}
+
+matrixGenerator(6, 6);

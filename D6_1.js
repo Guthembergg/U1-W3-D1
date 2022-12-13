@@ -59,12 +59,11 @@ let shoppingCart = [
 function shoppingCartTotal() {
   let somma = 0;
   for (let i = 0; i < shoppingCart.length; i++) {
-    somma = somma + shoppingCart[i].price * shoppingCart[i].quantity;
+    somma += shoppingCart[i].price * shoppingCart[i].quantity;
   }
-  console.log("la somma del carrello è:", somma);
+  return `la somma del carrello è :${somma}`;
 }
-console.log(shoppingCart);
-shoppingCartTotal();
+console.log(shoppingCartTotal());
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".

@@ -141,7 +141,7 @@ function reverseString(string) {
     console.log("inserisci stringa");
   }
 }
-reverseString("ciao amico");
+reverseString("ciao amico anu");
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -167,6 +167,7 @@ function upperFirst(string) {
   }
 }
 upperFirst("ciao amici");
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
@@ -183,7 +184,7 @@ function cutString(string) {
     console.log("inserisci stringa");
   }
 }
-cutString("ciao");
+cutString("ciao a tutti");
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
